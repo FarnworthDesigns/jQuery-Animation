@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery - Animation</title>
+<link rel="stylesheet" href="css/jq-animation.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<h1>jQuery Animation</h1>
+	</header>
+	<section>
+    
+    <div class="box"><span id="caption">Hello!</span></div>
+    <button id="animate">Animate!</button>
+    <button id="moreAnimate">More Animation!</button>
+    <button id="fadeDelay">Delayed Fade</button>
+   
+    
+    
+  <!-- The animate() function -->
+    <script>
+     $("#animate").click(function() {
+		 $(".box").animate({
+			left: "600px",
+		 	opacity: .5,
+		 	height: "200px",
+		 	width: "200px"
+		 },2000);
+	 });
+    
+    </script>
+    
+  <!-- The animate() function using an "object literal" -->
+    <script> 
+    
+    </script> 
+  
+  <!-- Using the delay() function -->
+    <script>
+    $("#fadeDelay").click(function(){
+		$("#caption").hide();
+		$(".box").animate({
+			left: "600px"
+			
+		}, function(){
+		$("#caption").fadeIn(3000).delay(4000).fadeOut(3000);				 
+	 }
+	);
+	});
+    </script>
+	</section>
+  
+</body>
+</html>

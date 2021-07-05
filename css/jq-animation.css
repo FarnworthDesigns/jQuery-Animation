@@ -1,0 +1,40 @@
+
+body {
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+header {
+	background-color: #801a38;
+	padding: 0.5em 0;
+	margin-bottom: 2em;
+	text-align: center;
+	color: #fff;
+}
+
+section {
+	margin: auto;
+	width: 33%;
+	font-size: 150%;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+button {
+  margin-top: 160px;
+}
+
+#animate, #moreAnimate, #fadeDelay {
+  font-size: 80%;
+  margin-right: 10px;
+}
+
+.box {
+  background: #98bf21;
+  height: 80px;
+  width: 100px;
+  position: absolute;
+  padding-top: 20px;
+}
+
+
